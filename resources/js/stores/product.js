@@ -23,6 +23,8 @@ export const product = {
     mutations: {
         requestProducts(state, payload){
             state.loading = true;
+            state.products = [];
+            state.error = "";
             state.filters = payload;
         },
         successProducts(state, payload){

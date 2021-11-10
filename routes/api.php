@@ -16,10 +16,6 @@ use App\Http\Controllers\ProductController;
 |
 */
 
-// Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-//     return $request->user();
-// });
-
 Route::get('/products', [ProductController::class, 'index']);
 
 Route::prefix('/product')->group(function() {
@@ -29,5 +25,5 @@ Route::prefix('/product')->group(function() {
 Route::get('/categories', [CategoryController::class, 'index']);
 
 Route::prefix('/category')->group(function() {
-    // Product Resources
+    // Category Resources
 });

@@ -19,6 +19,8 @@ export const category = {
     mutations: {
         requestCategories(state){
             state.loading = true;
+            state.categories = [];
+            state.error = "";
         },
         successCategories(state, payload){
             state.categories = payload;

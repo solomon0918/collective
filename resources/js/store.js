@@ -7,10 +7,10 @@ export default{
         vxCategory: category
     },
     state: {
-        
+
     },
     getters: {
-        mobile(state){
+        mobile(){
             if( screen.width <= 760 ) {
                 return false;
             }

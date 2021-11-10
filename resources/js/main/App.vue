@@ -23,7 +23,5 @@
 </script>
 
 <style scoped>
-    /* #content{
-        margin-left: ()
-    } */
+
 </style>

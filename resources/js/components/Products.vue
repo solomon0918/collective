@@ -46,7 +46,6 @@
         </b-skeleton-wrapper>
         <b-row>
             <b-col class="m-2">
-                <!-- {{ products }} -->
                 <b-pagination
                     @change="onPageChanged"
                     v-model="products.current_page"
@@ -66,8 +65,7 @@
         name: "Products",
         data() {
             return {
-                perPage: 20,
-                total: 0,
+                
             }
         },
         mounted () {
